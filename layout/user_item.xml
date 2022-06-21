@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfileItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/unkown_person_24"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/usernameItem"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor = "?android:textColorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/userCountryItem"
+            android:layout_marginTop = "2dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor = "?android:textColorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SettingsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black"
+        android:id="@+id/toolbar"
+        android:backgroundTint="@color/bg_screen3"
+        android:background="?android:attr/windowBackground">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProfile"
+        android:text="Edit Profile"
+        android:drawableLeft="@drawable/ic_baseline_create_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchUser"
+        android:text="Search User"
+        android:drawableLeft="@drawable/search_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seeBlockedUsers"
+        android:text="Blocked Users"
+        android:drawableLeft="@drawable/ic_baseline_person_off_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rateApp"
+        android:text="Rate Us"
+        android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareApp"
+        android:text="Share App"
+        android:drawableLeft="@drawable/ic_baseline_share_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seePrivacy"
+        android:text="Privacy Policy"
+        android:drawableLeft="@drawable/ic_baseline_privacy_tip_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seeTerms"
+        android:text="Terms"
+        android:drawableLeft="@drawable/ic_info"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+
+
+
+
+    <View style="@style/Divider"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?android:textColorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:text="Sign out"
+        android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+        android:textColor="?android:textColorPrimary"
+        android:drawablePadding="5dp"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:drawableTint="?android:textColorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"/>
+
+
+
+
+
+</LinearLayout>

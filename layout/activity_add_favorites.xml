@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddFavoritesActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black"
+        android:id="@+id/toolbar"
+        android:backgroundTint="@color/bg_screen3"
+        android:background="?android:attr/windowBackground">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteFavs"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange_700"
+        android:layout_marginTop="5dp"
+        android:text="Reset answers"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/orange_700"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background"
+        android:id="@+id/saveFavorites"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are some questions with two options. These questions are designed to help you see how compatible you are with the people you are talking to."
+        android:gravity="start"
+        android:textSize="14sp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="?android:textColorPrimary"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/tvGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+
+            app:divider="@color/orange_700"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="TV Series"
+                app:textColor="@color/black" />
+
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:selectedTextColor="@color/orange_700"
+
+
+                app:text="Movies"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/summerGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:divider="@color/orange_700"
+
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Summer"
+                app:textColor="@color/black" />
+
+
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:selectedTextColor="@color/orange_700"
+
+                app:text="Winter"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/catGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+            app:divider="@color/orange_700"
+
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Cat"
+                app:textColor="@color/black" />
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+
+                app:selectedTextColor="@color/orange_700"            app:text="Dog"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/sunriseGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+            app:divider="@color/orange_700"
+
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Sunrise"
+                app:textColor="@color/black" />
+
+
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+
+                app:selectedTextColor="@color/orange_700"            app:text="Sunset"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/planGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+            app:divider="@color/orange_700"
+
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Planning"
+                app:textColor="@color/black" />
+
+
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Spontaneity"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/introGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+            app:divider="@color/orange_700"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Introvert"
+                app:textColor="@color/black" />
+
+
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:selectedTextColor="@color/orange_700"
+                app:text="Extrovert"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/moneyGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+            app:divider="@color/orange_700"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:position="2"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Money"
+                app:textColor="@color/black" />
+
+
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:selectedTextColor="@color/orange_700"
+                app:text="Love"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/successGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:background="@color/white"
+            app:divider="@color/orange_700"
+            app:dividerPadding="7dp"
+            app:dividerWidth="1dp"
+            app:borderColor="@color/orange_700"
+            app:borderWidth="1dp"
+
+            app:position="2"
+            app:radius="30dp"
+
+            app:ripple="true"
+            app:rippleColor="@color/primary"
+            app:selectedBackground="@color/primary">
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                app:selectedTextColor="@color/orange_700"
+                app:text="Success"
+                app:textColor="@color/black" />
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:selectedTextColor="@color/orange_700"
+
+                app:text="Happiness"
+                app:textColor="@color/black" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/seaGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:elevation="2dp"
+                android:background="@color/white"
+                app:divider="@color/orange_700"
+                app:dividerPadding="7dp"
+                app:dividerWidth="1dp"
+                app:borderColor="@color/orange_700"
+                app:borderWidth="1dp"
+
+                app:position="2"
+                app:radius="30dp"
+
+                app:ripple="true"
+                app:rippleColor="@color/primary"
+                app:selectedBackground="@color/primary">
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+
+                    app:selectedTextColor="@color/orange_700"
+                    app:text="Forest"
+                    app:textColor="@color/black" />
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:selectedTextColor="@color/orange_700"
+
+                    app:text="Sea"
+                    app:textColor="@color/black" />
+
+
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/teaGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:elevation="2dp"
+                android:background="@color/white"
+                app:divider="@color/orange_700"
+                app:dividerPadding="7dp"
+                app:dividerWidth="1dp"
+                app:borderColor="@color/orange_700"
+                app:borderWidth="1dp"
+
+                app:position="2"
+                app:radius="30dp"
+
+                app:ripple="true"
+                app:rippleColor="@color/primary"
+                app:selectedBackground="@color/primary">
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+
+                    app:selectedTextColor="@color/orange_700"
+                    app:text="Tea"
+                    app:textColor="@color/black" />
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:selectedTextColor="@color/orange_700"
+
+                    app:text="Coffee"
+                    app:textColor="@color/black" />
+
+
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/trainGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:elevation="2dp"
+                android:background="@color/white"
+                app:divider="@color/orange_700"
+                app:dividerPadding="7dp"
+                app:dividerWidth="1dp"
+                app:borderColor="@color/orange_700"
+                app:borderWidth="1dp"
+
+                app:position="2"
+                app:radius="30dp"
+
+                app:ripple="true"
+                app:rippleColor="@color/primary"
+                app:selectedBackground="@color/primary">
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+
+                    app:selectedTextColor="@color/orange_700"
+                    app:text="Train"
+                    app:textColor="@color/black" />
+
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:selectedTextColor="@color/orange_700"
+
+                    app:text="Plane"
+                    app:textColor="@color/black" />
+
+
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

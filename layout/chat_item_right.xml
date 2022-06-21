@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_message"
+            android:layout_alignEnd="@id/show_message"
+            android:layout_marginRight="2dp"
+            android:text="asf  fasasfasfasfafsasf"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:autoLink="all"
+            android:background="@drawable/background_right"
+            android:lineSpacingExtra="4dp"
+
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="Hi, How are you?"
+
+            android:textColor="@color/white"
+            android:textIsSelectable="true"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_seen"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            android:text="seen"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/time_tv"
+            android:layout_alignEnd="@id/time_tv" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

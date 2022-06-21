@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="5dp"
+        android:textColorHint="@color/white"
+        android:text="You can change your username only once!"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/changeUsernameEt"
+        android:maxLength="15"
+        android:hint="Username"
+        android:layout_marginTop="15dp"
+       />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/saveUsername"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/orange_700"
+        android:background="@drawable/button_background"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Save" />
+
+
+
+</LinearLayout>

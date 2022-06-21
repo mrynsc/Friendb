@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ReportUserActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarReport"
+            android:background="@color/bg_screen3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reasonText"
+                    android:layout_alignParentStart="true"
+                    android:text="asfasfafs"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/orange_700"
+        android:text="REPORT"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/bar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+         />
+
+
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:id="@+id/groupradio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:id="@+id/radia_id1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="?android:textColorPrimary"
+
+            android:text="Sexual Content and Profanity"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hate Speech"
+            android:textColor="?android:textColorPrimary"
+
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Violence"
+            android:textColor="?android:textColorPrimary"
+
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Terrorist Content"
+            android:textColor="?android:textColorPrimary"
+
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Dangerous Movements and Organizations"
+            android:textColor="?android:textColorPrimary"
+
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bullying and Harassment"
+            android:textColor="?android:textColorPrimary"
+
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sensitive Events"
+            android:textColor="?android:textColorPrimary"
+
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radia_id8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="?android:textColorPrimary"
+
+            android:text="Dangerous Products"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/radia_id9"
+            android:layout_width="fill_parent"
+            android:textColor="?android:textColorPrimary"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Marijuana"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/radia_id10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:text="Tobacco and Alcohol"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupradio">
+
+        <EditText
+            android:id="@+id/reportDetailsEt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:hint="Details"
+            android:maxLength="250"
+            android:textColorHint="?android:textColorPrimary"
+            android:textColor="?android:textColorPrimary" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

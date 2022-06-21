@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#878484"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Apply"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/dot_dark_screen3"
+            android:textAllCaps="false"/>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchBio"
+            android:theme="@style/SCBSwitch"
+            android:textColor="@color/white"
+            android:checked="false"
+            android:layout_marginStart="4dp"
+            android:text="With 'Bio' Only    "
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"/>
+
+
+        <CheckBox
+            android:id="@+id/maleCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/femaleCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/agefilterList"
+            android:choiceMode="multipleChoice"/>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mbtiFilterList"
+            android:choiceMode="multipleChoice"/>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/countryFilterList"
+            android:choiceMode="multipleChoice"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

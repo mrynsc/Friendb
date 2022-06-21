@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="17sp"
+         android:textStyle="bold"
+         android:layout_marginTop="5dp"
+
+         android:textColor="@color/white"
+         android:gravity="center"
+         android:text="For a respectful and friendly environment, please follow the rules below."
+         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:text="• No spam"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="• No advertising"
+        android:textColor="@color/white"
+        android:layout_marginStart="5dp"
+
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+
+        android:text="• No fraud"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+         />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+
+        android:gravity="center"
+        android:text="• No racism, bullying or violence"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+
+        android:gravity="start"
+        android:layout_marginTop="10dp"
+        android:text="If you violate these and similar rules, your account can be deleted."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+
+
+
+</LinearLayout>
